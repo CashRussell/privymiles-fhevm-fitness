@@ -39,6 +39,7 @@ contract FitnessLeaderboard is ZamaEthereumConfig {
     uint32[NUM_BUCKETS] public calorieThresholds;
 
     constructor() {
+        // Initialize step thresholds for bucket distribution
         stepThresholds[0] = 2000;
         stepThresholds[1] = 5000;
         stepThresholds[2] = 10000;
