@@ -12,6 +12,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
+        {/* FHEVM providers for encrypted operations */}
         <Providers>
           <Navbar />
           {children}

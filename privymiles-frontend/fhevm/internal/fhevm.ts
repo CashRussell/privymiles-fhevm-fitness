@@ -26,6 +26,7 @@ function throwFhevmError(
   throw new FhevmReactError(code, message, cause ? { cause } : undefined);
 }
 
+// Check if FHEVM SDK is already initialized in the browser
 const isFhevmInitialized = (): boolean => {
   if (!isFhevmWindowType(window, console.log)) {
     return false;

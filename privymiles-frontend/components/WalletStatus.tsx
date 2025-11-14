@@ -3,6 +3,7 @@
 import { useMetaMaskEthersSigner } from '@/hooks/metamask/useMetaMaskEthersSigner';
 
 export function WalletStatus() {
+  // Wallet connection state management with EIP-6963 support
   const { provider, accounts, chainId, isConnected, connect } = useMetaMaskEthersSigner();
   const address = accounts?.[0];
   const disconnect = () => console.log('Disconnect not implemented in MetaMask provider');
