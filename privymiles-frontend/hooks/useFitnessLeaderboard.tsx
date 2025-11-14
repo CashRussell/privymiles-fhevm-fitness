@@ -8,6 +8,7 @@ import { GenericStringStorage } from "../fhevm/GenericStringStorage";
 import { FitnessLeaderboardAddresses } from "../abi/FitnessLeaderboardAddresses";
 import { FitnessLeaderboardABI } from "../abi/FitnessLeaderboardABI";
 
+// Get contract ABI and address based on chain ID
 function getFitnessLeaderboardByChainId(chainId: number | undefined): {
   abi: typeof FitnessLeaderboardABI;
   address?: `0x${string}`;
@@ -15,6 +16,7 @@ function getFitnessLeaderboardByChainId(chainId: number | undefined): {
   if (!chainId) {
     return { abi: FitnessLeaderboardABI };
   }
+  // Support localhost (31337) and Sepolia (11155111) networks
   const key = chainId === 31337 ? 'localhost' : chainId === 11155111 ? 'sepolia' : 'unknown';
   const entry = (FitnessLeaderboardAddresses as any)[key];
   if (!entry?.address) {

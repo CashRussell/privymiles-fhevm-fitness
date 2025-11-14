@@ -11,8 +11,10 @@ function _assert(condition: boolean, message?: string): asserts condition {
   }
 }
 
+// FHEVM instance lifecycle states
 export type FhevmGoState = "idle" | "loading" | "ready" | "error";
 
+// Main hook for FHEVM instance management with automatic reload on chain/provider changes
 export function useFhevm(parameters: {
   provider: string | ethers.Eip1193Provider | undefined;
   chainId: number | undefined;
