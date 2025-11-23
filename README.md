@@ -91,7 +91,7 @@ npx hardhat deploy --network localhost  # In another terminal
 - **Solidity** - Smart contract language
 - **FHEVM** - Fully Homomorphic Encryption support
 - **Hardhat** - Development environment
-- **@fhevm/solidity** v0.9.1 - FHEVM library
+- **@fhevm/solidity** v0.9.1 - FHEVM library (latest stable)
 
 ### Frontend
 - **Next.js 15** - React framework with App Router
@@ -99,7 +99,7 @@ npx hardhat deploy --network localhost  # In another terminal
 - **TailwindCSS** - Utility-first CSS
 - **shadcn/ui** - UI component library
 - **ethers.js v6** - Ethereum interactions
-- **@zama-fhe/relayer-sdk** 0.3.0-5 - FHEVM client library
+- **@zama-fhe/relayer-sdk** 0.3.0-5 - FHEVM client library (updated)
 
 ## 🔐 FHEVM Integration
 
